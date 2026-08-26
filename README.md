@@ -11,3 +11,4 @@ This repository contains my DevOps assignment work.
 
 ## Author
 Wavyt
+CI pipeline test
