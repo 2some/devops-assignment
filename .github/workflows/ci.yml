@@ -1,9 +1,20 @@
 name: Devops CI Pipeline
+
 on:
+
   push:
-   branches:
-     - main
-     jobs:
+
+    branches:
+
+      - main
+
+  pull_request:
+
+    branches:
+
+      - main
+
+jobs:
 
   build-and-test:
 
@@ -15,7 +26,7 @@ on:
 
         uses: actions/checkout@v6
 
-      - name: Set up python
+      - name: Set up Python
 
         uses: actions/setup-python@v6
 
@@ -31,21 +42,10 @@ on:
 
           python -m pip install --upgrade pip
 
-          if [ -f requirements.txt ]; then
-
-            pip install -r requirements.txt
-
-          fi
-
-      - name: Build
-
-        run: |
-
-          echo "build step completed successfully."
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run tests
 
         run: |
 
-          echo "tests completed successfully."
-
+          if [ -d tests ]; then pytest; else echo "No tests directory found"; fi
