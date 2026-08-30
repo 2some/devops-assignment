@@ -1,0 +1,64 @@
+DevOps Tooling Verification Report
+=================================
+
+Git:
+git version 2.43.0
+
+Docker:
+Docker version 29.1.3, build 29.1.3-0ubuntu3~24.04.2
+
+Kubernetes:
+Client Version: v1.36.3
+Kustomize Version: v5.8.1
+
+Minikube:
+minikube version: v1.38.1
+commit: c93a4cb9311efc66b90d33ea03f75f2c4120e9b0
+
+Helm:
+version.BuildInfo{Version:"v4.2.4", GitCommit:"3900f434fd3ef2b84065dc04508df48f288dba00", GitTreeState:"clean", GoVersion:"go1.26.5", KubeClientVersion:"v1.36"}
+
+Terraform:
+Terraform v1.16.0
+on linux_amd64
+
+Ansible:
+ansible [core 2.16.3]
+  config file = None
+  configured module search path = ['/home/wavyt/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/wavyt/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0] (/usr/bin/python3)
+  jinja version = 3.1.2
+  libyaml = True
+
+Node.js:
+v18.19.1
+
+jq:
+jq-1.7
+
+AWS CLI:
+aws-cli/2.35.21 Python/3.14.6 Linux/6.18.33.2-microsoft-standard-WSL2 exe/x86_64.ubuntu.24
+
+Azure CLI:
+azure-cli                         2.89.1
+
+core                              2.89.1
+telemetry                          1.1.0
+
+Dependencies:
+msal                              1.36.0
+azure-mgmt-resource               24.0.0
+
+Python location '/opt/az/bin/python3'
+Config directory '/home/wavyt/.azure'
+Extensions directory '/home/wavyt/.azure/cliextensions'
+
+Python (Linux) 3.14.6 (main, Aug 10 2026, 01:10:26) [GCC 13.3.0]
+
+Legal docs and information: aka.ms/AzureCliLegal
+
+
+Your CLI is up-to-date.
