@@ -84,3 +84,89 @@ This project demonstrates a basic Continuous Integration pipeline using GitHub A
 ## Author
 Wavyt
 CI pipeline test
+[18:35, 30/08/2026] OYE: {
+echo "DevOps Tooling Verification Report"
+echo "================================="
+echo
+echo "Git:"
+git --version
+echo
+echo "Docker:"
+docker --version
+echo
+echo "Kubernetes:"
+kubectl version --client
+echo
+echo "Minikube:"
+minikube version
+echo
+echo "Helm:"
+helm version
+echo
+echo "Terraform:"
+terraform --version
+echo
+echo "Ansible:"
+ansible --version
+echo
+echo "Node.js:"
+node --version
+echo
+echo "jq:"
+jq --version
+echo
+echo "AWS CLI:"
+aws --version
+echo
+echo "Azure CLI:"
+az --version
+} > tooling-verification.txt
+[18:55, 30/08/2026] OYE: ## Setup Documentation
+
+### Package Manager
+
+APT was used as the primary package manager on Ubuntu WSL for installing and maintaining system-level DevOps tools. Official installation methods were also used where appropriate.
+
+### Environment
+
+The project was configured and verified using:
+
+- Windows Subsystem for Linux (WSL)
+- Ubuntu 24.04
+- Git
+- Docker
+- Kubernetes / kubectl
+- Minikube
+- Helm
+- Terraform
+- Ansible
+- Node.js
+- jq
+- AWS CLI
+- Azure CLI
+
+### Troubleshooting
+
+During setup, the repository path was initially entered incorrectly using:
+
+cd/home/wavyt/devops-assignment
+
+This was corrected by navigating to the project using:
+
+cd ~/devops-assignment
+
+Git was then verified using git status to ensure the repository was clean and synchronised with the remote repository.
+
+Minikube was started and verified successfully using:
+
+minikube start
+
+minikube status
+
+kubectl get nodes
+
+The Minikube control-plane node reported a Ready status.
+
+### Verification
+
+Tool versions were checked and recorded in tooling-verification.txt. The verification report includes Git, Docker, Kubernetes, Minikube, Helm, Terraform, Ansible, Node.js, jq, AWS CLI and Azure CLI.
